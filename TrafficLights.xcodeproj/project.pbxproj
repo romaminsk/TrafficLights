@@ -56,12 +56,12 @@
 		E043B28F27902CF50049E88F /* TrafficLights */ = {
 			isa = PBXGroup;
 			children = (
-				E043B29027902CF50049E88F /* AppDelegate.swift */,
-				E043B29227902CF50049E88F /* SceneDelegate.swift */,
+				E043B29927902CF60049E88F /* Assets.xcassets */,
 				E043B29427902CF50049E88F /* ViewController.swift */,
 				E043B29627902CF50049E88F /* Main.storyboard */,
-				E043B29927902CF60049E88F /* Assets.xcassets */,
 				E043B29B27902CF60049E88F /* LaunchScreen.storyboard */,
+				E043B29027902CF50049E88F /* AppDelegate.swift */,
+				E043B29227902CF50049E88F /* SceneDelegate.swift */,
 				E043B29E27902CF60049E88F /* Info.plist */,
 			);
 			path = TrafficLights;
@@ -295,6 +295,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +324,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

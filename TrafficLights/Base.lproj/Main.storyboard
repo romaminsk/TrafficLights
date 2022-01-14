@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2H5-15-cRc" userLabel="Red View">
+                                <rect key="frame" x="100" y="64" width="190" height="196"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-ap-jit">
+                                <rect key="frame" x="100" y="285" width="190" height="200"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-dn-7Hw" userLabel="Green View">
+                                <rect key="frame" x="100" y="510" width="190" height="194"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L2-Aj-XCw">
+                                <rect key="frame" x="151.66666666666666" y="744" width="86.666666666666657" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLw-KA-W3E"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9L2-Aj-XCw" secondAttribute="bottom" constant="16" id="5e2-QX-yMO"/>
+                            <constraint firstItem="OPq-dn-7Hw" firstAttribute="top" secondItem="XCq-ap-jit" secondAttribute="bottom" constant="25" id="Ats-mz-cd2"/>
+                            <constraint firstItem="XCq-ap-jit" firstAttribute="top" secondItem="2H5-15-cRc" secondAttribute="bottom" constant="25" id="DHX-1e-IJv"/>
+                            <constraint firstItem="9L2-Aj-XCw" firstAttribute="top" secondItem="OPq-dn-7Hw" secondAttribute="bottom" constant="40" id="I8K-oa-dK1"/>
+                            <constraint firstItem="XCq-ap-jit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="IWc-4L-pnc"/>
+                            <constraint firstItem="OPq-dn-7Hw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="L0w-Hk-ecz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2H5-15-cRc" secondAttribute="trailing" constant="100" id="Ljq-NW-i3T"/>
+                            <constraint firstItem="2H5-15-cRc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MRv-kw-cUl"/>
+                            <constraint firstItem="2H5-15-cRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="TnP-iT-fbg"/>
+                            <constraint firstItem="2H5-15-cRc" firstAttribute="centerX" secondItem="9L2-Aj-XCw" secondAttribute="centerX" id="WkG-Ho-lc9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPq-dn-7Hw" secondAttribute="trailing" constant="100" id="ZQZ-2p-ihD"/>
+                            <constraint firstAttribute="bottom" secondItem="XCq-ap-jit" secondAttribute="bottom" constant="359" id="bhU-cQ-mwq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XCq-ap-jit" secondAttribute="trailing" constant="100" id="g2l-yo-yUr"/>
+                            <constraint firstAttribute="bottom" secondItem="2H5-15-cRc" secondAttribute="bottom" constant="584" id="vQV-XA-fGy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="OPq-dn-7Hw" id="M0d-8i-bdM"/>
+                        <outlet property="redView" destination="2H5-15-cRc" id="FAV-c8-C6T"/>
+                        <outlet property="yellowView" destination="XCq-ap-jit" id="Wjy-6H-nnF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="-295.3125"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
